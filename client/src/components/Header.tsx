@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Header = () => {
   return (
     <header className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-md rounded-t-lg">

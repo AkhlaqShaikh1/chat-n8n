@@ -1,5 +1,4 @@
-import React from 'react';
-
+//@ts-ignore
 const MessageInput = ({ inputValue, setInputValue, handleSendMessage }) => {
   return (
     <div className="p-4 bg-white border-t border-gray-200 rounded-b-lg">
