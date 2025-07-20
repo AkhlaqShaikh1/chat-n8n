@@ -8,7 +8,7 @@ const chatRoutes = require('./routes/chatRoutes');
 const app = express();
 const httpServer = http.createServer(app);
 const io = new Server(httpServer, {
-  path: '/socket.io',
+  path: '/backend/socket.io',
   cors: {
     origin: "*",
     methods: ["GET", "POST"]
