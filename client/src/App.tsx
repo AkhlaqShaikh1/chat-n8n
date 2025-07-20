@@ -22,7 +22,7 @@ function App() {
     }
     setChatId(currentChatId);
 
-    const socket = io('http://localhost:3001', { query: { chatId: currentChatId } });
+    const socket = io('https://chat-n8n-q3o9.onrender.com', { query: { chatId: currentChatId } });
 
     socket.on('botResponse', (response) => {
       setMessages((prevMessages) => [...prevMessages, { id: prevMessages.length + 1, text: response.message, sender: 'bot' }]);
@@ -45,7 +45,7 @@ function App() {
     setIsTyping(true);
 
     try {
-      await fetch('http://localhost:3001/api/chat', {
+      await fetch('https://chat-n8n-q3o9.onrender.com/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
